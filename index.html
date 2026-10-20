@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Choose your access</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+<header>
+  <span class="stamp">LIMITED EDITION · LIMITED TIME ONLY</span>
+  <h1>Hi <span contenteditable="true" spellcheck="false" id="to">Name</span>, pick your access to me</h1>
+  <p class="sub">A special membership made just for you, for <span contenteditable="true" spellcheck="false" id="event">our special day</span>. Choose a plan, subscribe, and tell me which one you picked.</p>
+  <p class="hint">Tap the dashed words to edit them before sending.</p>
+  <div class="timer" aria-label="Time left" role="timer">
+    <div><b id="d">0</b><span>days</span></div>
+    <div><b id="h">0</b><span>hours</span></div>
+    <div><b id="m">0</b><span>mins</span></div>
+    <div><b id="s">0</b><span>secs</span></div>
+  </div>
+  <p class="hint">This offer ends on October 31, 2026.</p>
+</header>
+
+<section class="grid" aria-label="Membership plans">
+  <article class="tier lite" tabindex="0" role="button" aria-pressed="false" data-name="Lite" data-tag="Friends only">
+    <h2>Lite</h2><p class="tag">Friends only</p>
+    <p class="price">Free <small>/ forever</small></p>
+    <ul>
+      <li>Good morning texts</li>
+      <li>Likes and reactions</li>
+      <li>Replies within the day</li>
+      <li class="no">Late-night calls</li>
+      <li class="no">Surprise gifts</li>
+    </ul>
+    <p class="fine">Very limited access.</p>
+    <button class="btn" type="button">Choose Lite</button>
+  </article>
+
+  <article class="tier std" tabindex="0" role="button" aria-pressed="false" data-name="Standard" data-tag="BFF plus">
+    <h2>Standard</h2><p class="tag">BFF plus</p>
+    <p class="price">1 coffee <small>/ month</small></p>
+    <ul>
+      <li>Everything in Lite</li>
+      <li>Daily chats and voice notes</li>
+      <li>Meme and playlist sharing</li>
+      <li>Weekend hangouts</li>
+      <li class="no">Unlimited surprises</li>
+    </ul>
+    <p class="fine">Best friend perks, with a little extra.</p>
+    <button class="btn" type="button">Choose Standard</button>
+  </article>
+
+  <article class="tier pre" tabindex="0" role="button" aria-pressed="false" data-name="Premium" data-tag="Full access, with limits">
+    <h2>Premium</h2><p class="tag">Full access*</p>
+    <p class="price">1 dinner <small>/ month</small></p>
+    <ul>
+      <li>Everything in Standard</li>
+      <li>Calls any time you need me</li>
+      <li>Planned dates and surprises</li>
+      <li>First to hear every story</li>
+      <li class="no">Skipping my sleep, ever</li>
+    </ul>
+    <p class="fine">*Some limits apply. Read the fine print with a smile.</p>
+    <button class="btn" type="button">Choose Premium</button>
+  </article>
+
+  <article class="tier vvip" tabindex="0" role="button" aria-pressed="false" data-name="VVIP" data-tag="Unlimited, no limits">
+    <span class="crown">Most exclusive</span>
+    <h2>VVIP</h2><p class="tag">Unlimited, no limits</p>
+    <p class="price">Priceless <small>/ always</small></p>
+    <ul>
+      <li>Everything in Premium</li>
+      <li>My time, first and always</li>
+      <li>Surprises on any day</li>
+      <li>A permanent reserved seat</li>
+      <li>Every key to my heart</li>
+    </ul>
+    <p class="fine">Fully unlocked. Only one person can hold this plan.</p>
+    <button class="btn" type="button">Choose VVIP</button>
+  </article>
+</section>
+
+<section class="sec" aria-label="Compare plans">
+  <h3>Compare what you get</h3>
+  <div class="wrap"><table>
+    <thead><tr><th></th><th>Lite</th><th>Standard</th><th>Premium</th><th>VVIP</th></tr></thead>
+    <tbody>
+      <tr><td>Texts and replies</td><td class="l">Limited</td><td class="y">Daily</td><td class="y">Anytime</td><td class="y">Instant</td></tr>
+      <tr><td>Voice notes and calls</td><td class="n">No</td><td class="l">Voice notes</td><td class="y">Yes</td><td class="y">Yes</td></tr>
+      <tr><td>Hangouts</td><td class="n">No</td><td class="l">Weekends</td><td class="y">Planned dates</td><td class="y">Anytime</td></tr>
+      <tr><td>Surprises and gifts</td><td class="n">No</td><td class="n">No</td><td class="l">Sometimes</td><td class="y">Unlimited</td></tr>
+      <tr><td>Priority over my schedule</td><td class="n">No</td><td class="n">No</td><td class="l">Limited</td><td class="y">Always</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="letter" aria-label="A note for you">
+  <h3>A little note before you choose</h3>
+  <p contenteditable="true" spellcheck="false">I made this because words alone felt too plain for what you mean to me. Whichever plan you pick, I’m glad you’re in my life. Write your own message here.</p>
+  <p>From, <span contenteditable="true" spellcheck="false">me</span></p>
+</section>
+
+<section class="sec" aria-label="Fine print">
+  <h3>Fine print</h3>
+  <details><summary>Can I switch plans later?</summary><p>Yes. Upgrade any time. Downgrading needs a hug first.</p></details>
+  <details><summary>What does “limited” mean?</summary><p>It means I’ll still reply, just maybe after I wake up from my nap.</p></details>
+  <details><summary>Why is this a limited edition?</summary><p>Because this exact moment only happens once, and so does this offer.</p></details>
+</section>
+
+<p class="note">No cancellation fees. Renewal is up to you.</p>
+</main>
+
+<dialog id="dlg">
+  <div style="font-size:2.4rem" aria-hidden="true">💌</div>
+  <h3 id="dh">Subscribed!</h3>
+  <p id="dp"></p>
+  <p class="code" id="code"></p>
+  <p class="fine">Screenshot this and send it to me.</p>
+  <button class="btn" type="button" id="close">Close</button>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
