@@ -1,5 +1,5 @@
 (function(){
-  var end=new Date("2026-10-31T23:59:00+08:00").getTime();
+  var end=new Date("2026-10-23T03:21:00+08:00").getTime();
   var ids={d:document.getElementById("d"),h:document.getElementById("h"),m:document.getElementById("m"),s:document.getElementById("s")};
   function tick(){
     var t=Math.max(0,end-Date.now());
