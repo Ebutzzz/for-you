@@ -1,4 +1,15 @@
 (function(){
+  try{
+    var q=new URLSearchParams(location.search),used=false;
+    [["to","to"],["event","event"],["from","from"],["note","note"]].forEach(function(p){
+      var v=q.get(p[0]),el=document.getElementById(p[1]);
+      if(v&&el){el.textContent=v;used=true;}
+    });
+    if(used){
+      document.querySelectorAll("[contenteditable]").forEach(function(e){e.removeAttribute("contenteditable");});
+      var h=document.getElementById("edithint");if(h)h.hidden=true;
+    }
+  }catch(e){}
   var end=new Date("2026-10-23T03:21:00+08:00").getTime();
   var ids={d:document.getElementById("d"),h:document.getElementById("h"),m:document.getElementById("m"),s:document.getElementById("s")};
   function tick(){
