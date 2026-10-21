@@ -10,7 +10,12 @@
       var h=document.getElementById("edithint");if(h)h.hidden=true;
     }
   }catch(e){}
-  var end=new Date("2026-10-22T21:33:00+08:00").getTime();
+  var HOURS=18,end;
+  try{ end=parseInt(localStorage.getItem("endAt18"),10); }catch(e){}
+  if(!end||isNaN(end)){
+    end=Date.now()+HOURS*3600*1000;
+    try{ localStorage.setItem("endAt18",String(end)); }catch(e){}
+  }
   var ids={d:document.getElementById("d"),h:document.getElementById("h"),m:document.getElementById("m"),s:document.getElementById("s")};
   function tick(){
     var t=Math.max(0,end-Date.now());
